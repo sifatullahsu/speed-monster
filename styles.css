@@ -11,6 +11,21 @@ body {
   font-family: "Zilla Slab", serif;
 }
 
+nav ul {
+  padding: 30px 50px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .box-container {
   width: 70%;
   margin: 0 auto;
@@ -38,9 +53,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 5rem;
+  padding: 2rem;
   color: white;
-  font-size: 32px;
+  font-size: 26px;
   background-color: #171717;
   border: 2px solid #9dffad;
   border-radius: 15px;
@@ -206,6 +221,11 @@ button {
 
 .blog-card h2 {
   margin-bottom: 15px;
+}
+
+.blog-card p {
+  font-size: 20px;
+  line-height: 30px;
 }
 
 @media only screen and (max-width: 700px) {
