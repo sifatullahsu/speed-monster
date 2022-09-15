@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <section id="blog">
+      <h1 style="color: #fff; text-align: center; margin-bottom: 20px;">Blog Posts</h1>
+      <div class="blog-card">
+        <h2>Q1: What is the difference between local storage and session storage?</h2>
+        <p>Session Storage objects can be accessed using the sessionStorage read-only property. And also Local Storage
+          objects can be accessed using the localStorage read-only property. The difference between sessionStorage and
+          localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page
+          session ends. <br><br>
+
+          localStorage and sessionStorage are perfect for persisting non-sensitive data needed within client scripts
+          between pages (for example: preferences, scores in games). The data stored in localStorage and sessionStorage
+          can easily be read or changed from within the client/browser so should not be relied upon for storage of
+          sensitive or security-related data within applications.</p>
+      </div>
+      <div class="blog-card">
+        <h2>Q2: What is the difference between Global scope and block scope?</h2>
+        <p><b>Global scope:</b> The variables defined outside of any function or curly brackets are known as global
+          variables and have global scope. Global scope means that the variables can be accessed from any part of that
+          program, any function or conditional state can access that variable.<br><br>
+
+          <b>Block scope:</b> Block scope is also a sub-type of local scope. The block scope can be defined as the scope
+          of the variables inside the curly brackets {}. Now, these curly brackets can be of loops, or conditional
+          statements, or something else. You are only allowed to refer to these variables from within the curly brackets
+          {}.
+        </p>
+
+
+      </div>
+      <div class="blog-card">
+        <h2>Q3: How does work JavaScript event loop?</h2>
+        <p>The event loop is a process that waits for the Call Stack to be clear before pushing callbacks from the Task
+          Queue to the Call Stack. Once the Stack is clear, the event loop triggers and checks the Task Queue for
+          available callbacks. If there are any, it pushes it to the Call Stack, waits for the Call Stack to be clear
+          again, and repeats the same process.</p>
+      </div>
+      <div class="blog-card">
+        <h2>Q4: How many ways can we get undefined?</h2>
+        <p>8 Ways we get undefined in JavaScript. <br>
+          1. variables that not initialized will give undefined. <br>
+          2. function with no return. <br>
+          3. parameter that is not passed will be undefined. <br>
+          4. if return has nothing on the right side will return undefined. <br>
+          5. property doesn't exist on an object will give undefined. <br>
+          6. accessing array elements outside of index range. <br>
+          7. deleting an array element inside an array. <br>
+          8. set a value directly to undefined. <br>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
