@@ -30,6 +30,7 @@ body {
       rgba(255, 255, 255, 0.05) 99.85%);
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
+  padding: 20px;
 }
 
 #display {
@@ -194,6 +195,10 @@ button {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+
+  #histories {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .card {

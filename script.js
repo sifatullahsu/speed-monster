@@ -11,18 +11,23 @@ let errorCount = 0;
 let startTime;
 let questionText = "";
 
+const loadDisplayQuestion = () =>{
+  fetch("./texts.json")
+    .then((res) => res.json())
+    .then((data) => {
+      questionText = data[Math.floor(Math.random() * data.length)];
+      question.innerHTML = questionText;
+    });
+}
+
 // Load and display question
-fetch("./texts.json")
-  .then((res) => res.json())
-  .then((data) => {
-    questionText = data[Math.floor(Math.random() * data.length)];
-    question.innerHTML = questionText;
-  });
+loadDisplayQuestion();
+
 
 // checks the user typed character and displays accordingly
 const typeController = (e) => {
   const newLetter = e.key;
-
+  
   // Handle backspace press
   if (newLetter == "Backspace") {
     userText = userText.slice(0, userText.length - 1);
@@ -52,6 +57,7 @@ const typeController = (e) => {
   // check if given question text is equal to user typed text
   if (questionText === userText) {
     gameOver();
+    loadDisplayQuestion();
   }
 };
 
